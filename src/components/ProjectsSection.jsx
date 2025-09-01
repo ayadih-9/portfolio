@@ -3,30 +3,41 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    title: "Twizy Design Office: Traffic Sign Detection & Recognition",
+    description:
+      "Acquisition and preprocessing of visual data, implementing image processing algorithms such as Canny, SIFT, and ORB for traffic sign recognition (2024-2025).",
+    image: "/projects/twizzy.png",
+    tags: ["Image Processing", "Computer Vision", "Canny", "SIFT", "ORB"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Maze Game (Java, Scrum Methodology)",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+      "Developed a Java-based game with a graphical interface and object-oriented programming. Project realized collaboratively using Agile Scrum and proper testing practices (Oct 2024 – Jan 2025).",
+    image: "/projects/game.png",
+    tags: ["Java", "OOP", "Scrum", "Game Development"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Weather Balloon Project - Lycée Chopin, Nancy",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+      "Designed a meteorological data acquisition system and supervised practical work sessions (Oct 2023 – Jun 2024).",
+    image: "/projects/ballon.jpg",
+    tags: ["Embedded Systems", "Data Acquisition", "Meteorology"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 4,
+    title: "TIPE Project: Autonomous Car - Multi-Sensor Fusion",
+    description:
+      "Implemented probabilistic state estimation and explored multi-sensor data fusion techniques (2022-2023).",
+    image: "/projects/tipe.jpg",
+    tags: ["Autonomous Systems", "Sensor Fusion", "Probabilistic Estimation"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -37,13 +48,11 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
           Featured <span className="text-primary"> Projects </span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          Here are some of my academic and personal projects, showcasing my experience in autonomous systems, image processing, Java development, and data acquisition.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -69,7 +78,7 @@ export const ProjectsSection = () => {
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
