@@ -20,7 +20,7 @@ export const AboutSection = () => {
             </p>
 
             <p className="text-muted-foreground">
-              I am enrolled in a 3-year engineering program in Digital Systems Engineering, specializing in Autonomous Systems  at ENSEM Nancy. I have built a strong foundation in Python and data processing, with a keen interest in responsible AI and innovative autonomous technologies.
+              I am enrolled in a 3-year engineering program in Digital Systems Engineering, specializing in Autonomous Systems at ENSEM Nancy. I have built a strong foundation in Python and data processing, with a keen interest in responsible AI and innovative autonomous technologies.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -29,10 +29,11 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href=""
+                href="/cv.pdf"
+                download
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
-                Download CV
+                Download my CV
               </a>
             </div>
           </div>
@@ -61,8 +62,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Engineering Studies</h4>
                   <p className="text-muted-foreground">
-                  3-year Digital Systems Engineering program at ENSEM Nancy, specializing in Autonomous Systems. Solid foundation in Python, data processing, and responsible AI.
-
+                    3-year Digital Systems Engineering program at ENSEM Nancy, specializing in Autonomous Systems. Solid foundation in Python, data processing, and responsible AI.
                   </p>
                 </div>
               </div>

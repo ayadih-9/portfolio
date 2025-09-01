@@ -10,9 +10,9 @@ export const HeroSection = () => {
         <div className="space-y-6">
           {/* Image */}
          <img
-          src="/ayadih.png"  // image dans public/
+          src="/hid.jpg"  // image dans public/
           alt="Hidaya Amrhar"
-          className="w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto opacity-0 animate-fade-in object-cover"
+          className="w-64 h-64 md:w-80 md:h-80 rounded-full mx-auto opacity-0 animate-fade-in object-cover"
         />
 
 
