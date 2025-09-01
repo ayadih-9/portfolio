@@ -5,8 +5,11 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/portfolio/",   // <-- Ajoute cette ligne
+  base: "/portfolio/",
   plugins: [react(), tailwindcss()],
+  build: {
+    outDir: 'dist'  // Assure-toi que c'est bien 'dist'
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
